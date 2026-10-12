@@ -10,17 +10,38 @@ Azure, Resource groups, Tags, Policy
 
 ## Investigation
 
-1. Examging what went wrong after the intern deployment.
-   ![alt text](image.png)
+Step 1. Examing what went wrong after the intern deployment. When looking throught he deployed reasource group i noticed one out of alignment with our policies. I flagged the out of bounds resource group for further investigation.
+
+![alt text](image.png)
+
+Step 2. Clicking into the RG i noticed that there was a asset created. I went to look to see if there were any tags created examining it I noticed the Intern atleast did some tagging so I was able to get some information from those.
+
+![alt text](image-1.png)
+
+Step 3. With the initial information gathered, I needed to determine when the resource was deployed. I navigated to the Deployments tab, located the initial deployment record, and reviewed its timestamp to establish the deployment timeline.
+
+![alt text](image-2.png)
+
+Step 4. After establishing the who and the what, I investigated why the resource was allowed to be created despite violating our naming policy. I found that the policy was configured with the Audit effect rather than Deny. This meant the policy flagged noncompliant resources but did not block their creation, explaining how the deployment was allowed to proceed.
+
+![alt text](image-3.png)
 
 ## What broke / what surprised me
 
-The most credible section in the document. Dead ends, wrong guesses, the thing that took an hour. Employers know real work is messy. This section separates you from certificate collectors.
+What surprised me was that the naming policy was configured to audit violations rather than prevent them. The policy appeared to be working as configured, but its configuration left a gap in enforcement. The intern was able to deploy a noncompliant resource without an apparent review or approval from a supervisor.
 
 ## Findings and recommendations
 
-What you determined, plus 2 or 3 recommendations as if you were reporting to the resource owner.
+Enforce naming requirements: Change the naming policy’s effect from Audit to Deny to block noncompliant deployments, particularly in production. Review existing resources and test the change before enforcement.
+
+Restrict Contributor access: Review role assignments and apply least privilege, granting deployment permissions only to users who need them and at the appropriate scope.
+
+Require resource tags: Enforce mandatory tags, such as owner, environment, and cost center, for supported resource types to improve accountability and tracking.
 
 ## What I learned
 
-3 to 5 bullets. At least one technical, one "what I'd do differently."
+I learned to verify that policies intended to block noncompliant deployments use Deny, especially in production. Audit is useful for assessing compliance and testing policies before enforcement, but it does not prevent violations.
+
+I surprised myself with how quickly I navigated the resource group and located the information needed for my investigation.
+
+This lab reinforced the importance of least privilege and carefully reviewing who receives elevated permissions, what they can access, and why they need that access.
