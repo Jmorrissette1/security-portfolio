@@ -10,7 +10,8 @@ Azure, Resource groups, Tags, Policy
 
 ## Investigation
 
-The core. Numbered steps IN YOUR OWN WORDS: what you looked at, what you found, what you concluded at each step. 6 to 12 screenshots of meaningful moments (portal views, query results, before/after).
+1. Examging what went wrong after the intern deployment.
+   ![alt text](image.png)
 
 ## What broke / what surprised me
 
