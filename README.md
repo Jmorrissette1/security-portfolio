@@ -10,7 +10,7 @@ Contact: [email] · [LinkedIn URL]
 ## Investigations
 | # | Title | Focus | Write-up |
 |---|-------|-------|----------|
-| 1 | Operation Dead Deploy | Governance forensics, deployment audit trail | <a href="https://github.com/Jmorrissette1/security-portfolio/blob/main/Chapter%201/chapter-1.md">|
+| 1 | Operation Dead Deploy | Governance forensics, deployment audit trail | <a href="https://github.com/Jmorrissette1/security-portfolio/blob/main/Chapter%201/chapter-1.md"> Chapter 1</a>|
 | 2 | The Stolen Identity | App registration attack kill chain (Entra ID) | coming, week 2 |
 | 3 | Privilege Audit | RBAC and least privilege | coming, week 3 |
 | 4 | Spin Up and Lock Down | Compute attack surface | coming, week 4 |
