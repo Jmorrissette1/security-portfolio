@@ -3,9 +3,9 @@
 Documented cloud security investigations, built in a live Azure tenant
 (Mad Hat Labs, a multi-user training environment).
 
-Target role: SOC Analyst / Security Analyst
-Currently: [your role] | [City / Remote]
-Contact: [email] · [LinkedIn URL]
+Target role: Security Engineer / Cloud Security Engineer
+Currently: Full Stack Developer | Seattle WA /Remote
+Contact: j.morrissette47@gmail.com · [LinkedIn URL](https://www.linkedin.com/in/jasonmorrissette/)
 
 ## Investigations
 | # | Title | Focus | Write-up |
