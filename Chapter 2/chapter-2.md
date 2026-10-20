@@ -15,6 +15,10 @@ One list: platform, services, tools, access level. Honest framing: "live multi-u
 
 ![alt text](image.png)
 
+The incident team logged the entry method as metadata on the legacy app.
+
+![alt text](image-1.png)
+
 <li>ESCALATE. Using those Owner rights, the attacker minted a new client secret on the legacy app. That secret let them authenticate through the client credentials flow as the service principal itself, inheriting the app's directory permissions without ever signing in as a human again. Note the expiry date: set nearly a century out.</li>
 
 <li>PIVOT. A single secret dies when it gets rotated. So the attacker registered their own app (every standard user can do this by default in Entra) and added its service principal to the legacy app's Owners list. Now they can re-credential the legacy app forever, even after the first secret is caught.</li>
