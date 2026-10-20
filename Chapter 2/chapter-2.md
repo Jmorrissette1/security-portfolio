@@ -11,7 +11,9 @@ One list: platform, services, tools, access level. Honest framing: "live multi-u
 ## Investigation
 
 <ol>
-<li>ENTRY. A user was phished, completed MFA, and had the resulting session token stolen. That token carried an MFA-satisfied claim, so it sailed past Conditional Access. That user was also, through years of drift, still an Owner on a legacy connector app.</li>
+<li>ENTRY. IT has been reported that a end user was vitcim of a phishing email and they had completed the fake MFA on the compromised sign in. This resulted in the session token being stolen. that token carried a Satified MFA sign on request. My investigation revealed that the user was tied to an old app service XX-Legacy-Sync-Service.</li>
+
+![alt text](image.png)
 
 <li>ESCALATE. Using those Owner rights, the attacker minted a new client secret on the legacy app. That secret let them authenticate through the client credentials flow as the service principal itself, inheriting the app's directory permissions without ever signing in as a human again. Note the expiry date: set nearly a century out.</li>
 
