@@ -1,4 +1,4 @@
-# [Title, outcome-flavored: "Investigating an Identity Attack in Entra ID"]
+# The Stolen Identity
 
 ## Scenario
 
