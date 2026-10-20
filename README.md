@@ -12,7 +12,7 @@ Contact: j.morrissette47@gmail.com · [LinkedIn URL](https://www.linkedin.com/in
 | #   | Title                 | Focus                                         | Write-up                                                                                                       |
 | --- | --------------------- | --------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
 | 1   | Operation Dead Deploy | Governance forensics, deployment audit trail  | <a href="https://github.com/Jmorrissette1/security-portfolio/blob/main/Chapter%201/chapter-1.md"> Write Up</a> |
-| 2   | The Stolen Identity   | App registration attack kill chain (Entra ID) | <a href="https://github.com/Jmorrissette1/security-portfolio/blob/main/Chapter%201/chapter-1.md"> Write Up</a> |
+| 2   | The Stolen Identity   | App registration attack kill chain (Entra ID) | <a href="https://github.com/Jmorrissette1/security-portfolio/blob/main/Chapter%202/chapter-2.md"> Write Up</a> |
 | 3   | Privilege Audit       | RBAC and least privilege                      | coming, week 3                                                                                                 |
 | 4   | Spin Up and Lock Down | Compute attack surface                        | coming, week 4                                                                                                 |
 | 5   | Network the Operative | Network segmentation                          | coming, week 5                                                                                                 |
