@@ -6,7 +6,11 @@ Reconstructed a five-stage OAuth consent-phishing kill chain in a live Azure ten
 
 ## Environment
 
-One list: platform, services, tools, access level. Honest framing: "live multi-user Azure training tenant, Reader access."
+Platform: Microsoft Azure
+Services and components: Microsoft Entra ID, app registrations, enterprise applications, and API permissions
+Environment: Live, multi-user Azure training tenant
+Investigation status: Active
+Assigned access: Operative — Reader access
 
 ## Investigation
 
